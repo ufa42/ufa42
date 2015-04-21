@@ -5,6 +5,7 @@
 'use strict';
 
 var React = require('react-native');
+var db = require("./db");
 var {
   AppRegistry,
   StyleSheet,
