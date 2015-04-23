@@ -5,7 +5,6 @@
 'use strict';
 
 var React = require('react-native');
-var db = require("./db");
 var {
   AppRegistry,
   StyleSheet,
@@ -13,7 +12,7 @@ var {
   View,
 } = React;
 
-var ios = React.createClass({
+var ufa42 = React.createClass({
   render: function() {
     return (
       <View style={styles.container}>
@@ -51,4 +50,4 @@ var styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('ios', () => ios);
+AppRegistry.registerComponent('ufa42', () => ufa42);
