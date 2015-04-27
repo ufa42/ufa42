@@ -31,8 +31,11 @@ var ufa42 = React.createClass({
 var styles = StyleSheet.create({
     container: {
         paddingTop: 20,
-    backgroundColor: '#FFFFFF',
-  },
+        backgroundColor: '#FFFFFF',
+        flex:1,
+        flexDirection:"column",
+        
+    },
 });
 
 AppRegistry.registerComponent('ufa42', () => ufa42);

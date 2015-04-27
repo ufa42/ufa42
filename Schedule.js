@@ -39,13 +39,11 @@ var Schedule = React.createClass({
         };
         
         return (
-                <View style={{flex:1}}>
-                <Text style={{fontSize:20,textAlign:"center",marginTop:20}}>{conf.date}</Text>
-                
-                <MapView showsUserLocation={false} style={{ height:200}} annotations={map} region={region}/>
-                <ListView dataSource={ds} renderRow={this.renderRow} />
-
-                </View>
+                <View style={{flex:0.5, flexDirection:"column"}}>
+                <Text style={{flex:1, fontSize:20,textAlign:"center",marginTop:20}}>{conf.date}</Text>
+                <MapView showsUserLocation={false} annotations={map} region={region} style={{flex:3, backgroundColor:"#00FF00", flexDirection:"column"}}/>
+                <ListView dataSource={ds} renderRow={this.renderRow} style={{flex:4, height: 300}}/>
+            </View>
       );
   }
 });
