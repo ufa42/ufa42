@@ -40,7 +40,7 @@ var Schedule = React.createClass({
         
         return (
                 <View style={{flex:0.5, flexDirection:"column"}}>
-                <Text style={{flex:1, fontSize:20,textAlign:"center",marginTop:20}}>{conf.date}</Text>
+                <Text style={{flex:0.5, fontSize:20,textAlign:"center",marginTop:20}}>{conf.date}</Text>
                 <MapView showsUserLocation={false} annotations={map} region={region} style={{flex:3, backgroundColor:"#00FF00", flexDirection:"column"}}/>
                 <ListView dataSource={ds} renderRow={this.renderRow} style={{flex:4, height: 300}}/>
             </View>

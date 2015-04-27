@@ -46,12 +46,14 @@ var TalkWidget = React.createClass({
     render: function() {
         var c = this.props.talk;
 
+        var photo = c.speaker.photo || "https://pbs.twimg.com/profile_images/476974911437545472/YU1-L8qx.png";
+
         return (
 
 
                 <View style={styles.container}>
 
-                <Image source={{uri:c.speaker.photo}} style={styles.photo}/>
+                <Image source={{uri:photo}} style={styles.photo}/>
                 <View style={styles.right}>
                 <Text style={styles.title}>{c.title}</Text>
                 

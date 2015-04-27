@@ -66,7 +66,7 @@ var fil = user(4, "lozga", "Filipp Terekhov", "https://pbs.twimg.com/profile_ima
 var h3m0ptys1s = user(5, "h3m0ptys1s", "Oleg Gumerov", "https://pbs.twimg.com/profile_images/553508290261311489/EOUgvLll_400x400.jpeg");
 var sergey = user(6, "krasina15", "Sergey Tarasenko", "https://pbs.twimg.com/profile_images/915874529/f8376ccebd0220635cc7c8924804b120_400x400.png");
 var nikolay = user(8, "NikolayIakovlev", "Nikolay Iakovlev", "https://pbs.twimg.com/profile_images/2159744451/appleStore.jpg");
-var arsenij = user(7, "no twitter", "Arsenij Imamutdinov", "http://s018.radikal.ru/i511/1504/b6/fb5100a0446a.jpg");
+var arsenij = user(7, undefined, "Arsenij Imamutdinov", "http://s018.radikal.ru/i511/1504/b6/fb5100a0446a.jpg");
 
 
 
