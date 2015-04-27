@@ -18,14 +18,14 @@ var {
 var ufa42 = React.createClass({
     render: function() {
 
-        var conf = db.conferences[2];
+        var conf = db.conferences[3];
         
-      return (
-              <View style={styles.container}>
-              <Schedule conf={conf} />
-        </View>
-    );
-  }
+        return (
+                <View style={styles.container}>
+                <Schedule conf={conf} />
+                </View>
+        );
+    }
 });
 
 var styles = StyleSheet.create({

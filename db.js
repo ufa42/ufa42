@@ -57,20 +57,26 @@ var rinat = user(16135676, "abdullin", "Rinat Abdullin", "http://pbs.twimg.com/p
 var lev = user(9600972, "levkhomich", "Lev Khomich", "https://pbs.twimg.com/profile_images/459340276188708864/b3X4WwoB.png");
 var andrey = user(2378268950, "andrey_feokt", "Andrey Feoktistov", "https://pbs.twimg.com/profile_images/478884565369360384/RevpRhzK.png");
 var rishat = user(94962222, "MrDarK_AngeL", "Rishat Shamsutdinov", "https://pbs.twimg.com/profile_images/507544081548206080/VJTYy-dc_400x400.jpeg");
-var grisha = user(1, "no twitter", "Grigory Leonenko", "https://pp.vk.me/c613522/v613522262/f295/WXWyojalNxo.jpg");
-var anjei = user(2, "no twitter", "Anjei Katkov");
+var grisha = user(1, undefined, "Grigory Leonenko", "https://pp.vk.me/c613522/v613522262/f295/WXWyojalNxo.jpg");
+var anjei = user(2, undefined, "Anjei Katkov");
 var ruslan = user(568182702, "izuick", "Ruslan Zuick", "https://pbs.twimg.com/profile_images/2181307609/IMG_10832.gif");
 var artem = user(3, "avpxalive", "Artem Popov", "https://pbs.twimg.com/profile_images/2470048812/fee2031e43a59d4d4fd583b9b34aa4dc.jpeg");
 var ksenia = user(39486845, "akitka", "Ksenia Makarova", "https://pbs.twimg.com/profile_images/476727113383297024/hJMp-Xxw.jpeg");
 var fil = user(4, "lozga", "Filipp Terekhov", "https://pbs.twimg.com/profile_images/378800000802397697/a63d690bdef1a580e14ca4ee48fdc878_400x400.png");
 var h3m0ptys1s = user(5, "h3m0ptys1s", "Oleg Gumerov", "https://pbs.twimg.com/profile_images/553508290261311489/EOUgvLll_400x400.jpeg");
 var sergey = user(6, "krasina15", "Sergey Tarasenko", "https://pbs.twimg.com/profile_images/915874529/f8376ccebd0220635cc7c8924804b120_400x400.png");
+var nikolay = user(8, "NikolayIakovlev", "Nikolay Iakovlev", "https://pbs.twimg.com/profile_images/2159744451/appleStore.jpg");
+var arsenij = user(7, "no twitter", "Arsenij Imamutdinov", "http://s018.radikal.ru/i511/1504/b6/fb5100a0446a.jpg");
+
 
 
 
 var synergy = place("ШБ Синергия", 54.7252452, 55.949416, "Уфа, ул. Коммунистическая, 54", "");
 var duslyk = place("Дуслык", 54.7276034, 55.9494373, "Уфа, ул. Крупской, 9", "2 этаж");
 var gosti = place("Гости", 54.719282, 55.949928, "Уфа, ул. Цюрупы, 12", "");
+var morris = place("Morris", 54.728811, 55.941556, "Уфа, ул. Гоголя 60/1", "");
+
+
 
 function conf(subj) {
   if (!subj.place) {
@@ -132,6 +138,28 @@ conf({
     light("Доставить за 60 миллисекунд", "", sergey, "assets/talks/CDN.pdf")
   ]
 });
+
+conf({
+  place: synergy,
+  beers: morris,
+  date: "2015-04-27",
+  talks: [
+    talk("React Native глазами не iOS разработчика", "", rinat),
+    talk("React Native глазами iOS разработчика", "", rishat),
+    talk("Разработка Android-приложений на Scala", "", anjei),
+    talk("Аутсорсинг разработки ПО", "", h3m0ptys1s),
+    talk("TopCoder: риск - дело благородное", "", nikolay),
+    talk("Apache Spark: как перестать беспокоиться и начать жить", "", lev),
+
+    light("Телеметрия в .NET", "", rinat),
+    light("“Секционирование” БД, как не надо делать", "", arsenij),
+    light("Немного о средствах профилирования производительности в Chrome", "", ruslan)
+  ]
+
+}
+
+
+);
 
 module.exports = db;
 

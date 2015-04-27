@@ -34,6 +34,7 @@ var styles = StyleSheet.create({
     },
     subtitle: {
         textAlign: 'center',
+        color:"#CCCCCC",
     },
     
     right: {
@@ -44,6 +45,7 @@ var styles = StyleSheet.create({
 var TalkWidget = React.createClass({
     render: function() {
         var c = this.props.talk;
+
         return (
 
 
@@ -53,7 +55,7 @@ var TalkWidget = React.createClass({
                 <View style={styles.right}>
                 <Text style={styles.title}>{c.title}</Text>
                 
-                <Text style={styles.subtitle}>{c.description}</Text>
+                <Text style={styles.subtitle}>{c.speaker.name}</Text>
                 </View>
                 </View>
 
